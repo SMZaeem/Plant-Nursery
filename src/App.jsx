@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import ProductList from './ProductList';
-import './App.css';
+import './App.scss';
 import AboutUs from './AboutUs';
 
 function App() {
@@ -17,9 +17,8 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <div className={`landing-page ${showProductList ? 'fade-out' : ''}`}>
-        <div className="background-image"></div>
+    <div className="app-container background-img">
+      <section className={`landing-page ${showProductList ? 'fade-out' : ''}`}>
         <div className="content">
          <div className="landing_content">
          <h1>Welcome To Paradise Nursery</h1>
@@ -35,10 +34,10 @@ function App() {
           </div>
           </div>
 
-      </div>
-      <div className={`product-list-container ${showProductList ? 'visible' : ''}`}>
+      </section>
+      <section className={`product-list-container ${showProductList ? 'visible' : ''}`}>
         <ProductList onHomeClick={handleHomeClick}/>
-      </div>
+      </section>
     </div>
   );
 }
