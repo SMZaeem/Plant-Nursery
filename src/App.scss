@@ -2,7 +2,7 @@
   margin: 0;
 }
 .app-container {
-  // overflow: hidden;
+  overflow: hidden;
 }
 section {
   width: 100%;
@@ -27,7 +27,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg');
+  // background-image: url('https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg');
+  background-image: url('assets/plants background image.jpg');
   background-size: cover; /* Cover the entire background */
   background-position: center;
   filter: brightness(0.8);
